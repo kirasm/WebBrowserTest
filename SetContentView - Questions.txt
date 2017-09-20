@@ -1,0 +1,15 @@
+Er der nogle fordele og ulemper med programmatisk hhv. deklarativt layout ?
+
+	Fordele: Et programmatisk deklarativt layout kan dynamisk blive genereret gennem koden, så alt der ikke kan laves fra starten med et
+	XML deklarativt layout, kunne laves programmatisk. 
+	Ulemper: Et programmatisk deklarativt layout er typisk mere besværligt, da koden hurtigt kan blive klodset 
+	og layoutet kan blive ødelagt da vi ikke har "planlagt" hvor alt er i forevejen.
+	
+
+Står setContentView() øverst eller nederst når man bruger deklarativt (XML) layout ? Hvorfor?
+
+Øverst, da layoutet bliver genereret før implementeringen af elementernes funktionalitet bliver kompileret.
+
+Står setContentView() øverst eller nederst når man bruger programmatisk (Java) layout ? Hvorfor?
+
+Nederst, da elementerne skal have været "læst" før de kan blive bedt om at blive vist på skærmen. 
